@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chinese Tones</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="main.css" type="text/css" />
+
+<script type="text/javascript" src="main.js" charset="utf-8"></script>
+
+</head>
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Strokes and meanings</h4>
+      </div>
+      <div class="modal-body">
+        <iframe id="chstroke"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+	<div id="main">
+		<div id="leftcontainer">
+			<div id="left">
+				<button type="button" id="previous_page" class="btn btn-default navigation_button">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</button>
+			</div>
+		</div>
+			<div id="middleright">
+			<div id="middlecontainer">
+					<div id="middle">
+						<button id="chinese_word" type="button" class="btn btn-default content_array" data-toggle="modal" data-target="#myModal">
+							<h1 id="characterb"></h1> 
+							<h2 id="characters"></h2>
+						</button>
+					</div>
+			</div>
+			<div id="rightcontainer">
+				<div id="right">
+					<button type="button" id="next_page" class="btn btn-default navigation_button">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main_bottom">
+		<div id="left_bottom_container">
+			<div id="left_bottom">
+				<button type="button" class="btn btn-default choice_button tone_button">
+					<p id="first_tone">1</p>
+						<span class="glyphicon glyphicon-ok" style="display:none"></span>
+						<span class="glyphicon glyphicon-remove" style="display:none"></span>
+				</button>
+          </div>
+        </div>
+        <div id="middle_bottom_1_container">
+          <div id="middle_bottom_1">
+              <button type="button" class="btn btn-default choice_button tone_button">
+                <p id="second_tone">2</p>
+                <span class="glyphicon glyphicon-ok" style="display:none"></span>
+						<span class="glyphicon glyphicon-remove" style="display:none"></span>
+			</button>
+			</div>
+         </div>
+          <div id="middle_bottom_2_container">
+            <div id="middle_bottom_2">
+              <button type="button" class="btn btn-default choice_button tone_button">
+				<p id="third_tone">3</p>
+				<span class="glyphicon glyphicon-ok" style="display:none"></span>
+						<span class="glyphicon glyphicon-remove" style="display:none"></span>
+              </div>
+            </div>
+			<div id="right_bottom_container">
+				<div id="right_bottom">
+                  <button type="button" class="btn btn-default choice_button tone_button">
+					<p id="fourth_tone">4</p>
+					<span class="glyphicon glyphicon-ok" style="display:none"></span>
+						<span class="glyphicon glyphicon-remove" style="display:none"></span>
+					</button>
+					<button type="button" class="btn btn-default choice_button tone_button">
+					<p id="fifth_tone">Neutral</p>
+					<span class="glyphicon glyphicon-ok" style="display:none"></span>
+						<span class="glyphicon glyphicon-remove" style="display:none"></span>
+					</button>
+				</div>
+		    </div>
+	</div>
+</div>
+
+</body>
+</html>
