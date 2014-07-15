@@ -38,7 +38,7 @@ $(function(){
 	 {pinyin:'Fa',chinese:'发',tone:'first_tone',
 	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=53d1&last=1'},
 	 {pinyin:'Wu',chinese:'午',tone:'third_tone',
-	  url:'#'}
+	  url:'#'},
 	 {pinyin:'Can',chinese:'餐',tone:'first_tone',
 	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=9910&last=5'},
 	 {pinyin:'Chi',chinese:'吃',tone:'first_tone',
