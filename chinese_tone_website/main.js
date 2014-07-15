@@ -4,25 +4,69 @@ $(function(){
 	 {pinyin:'Wo',chinese:'我',tone:'third_tone',
 	  url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=6211&last=1'},
 	 {pinyin:'Ni',chinese:'你',tone:'third_tone',
-	 url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=4f60&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=4f60&last=1'},
 	 {pinyin:'Ta',chinese:'他',tone:'first_tone',
-	 url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=4ed6&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=4ed6&last=1'},
 	 {pinyin:'De',chinese:'的',tone:'neutral_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=7684&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=7684&last=1'},
 	 {pinyin:'Shi',chinese:'是',tone:'fourth_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=662f&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=662f&last=1'},
 	 {pinyin:'Da',chinese:'大',tone:'fourth_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5927&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5927&last=1'},
 	 {pinyin:'Zai',chinese:'在',tone:'fourth_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5728&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5728&last=1'},
 	 {pinyin:'Ren',chinese:'人',tone:'second_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4eba&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4eba&last=1'},
 	 {pinyin:'Zhong',chinese:'中',tone:'first_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4e2d&last=1'},
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4e2d&last=1'},
 	 {pinyin:'Guo',chinese:'国',tone:'second_tone',
-	 url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=56fd&last=1'},
-	 //{pinyin:,chinese:,tone:,url:},
-
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=56fd&last=1'},
+	 {pinyin:'Bu',chinese:'不',tone:'second_tone',
+	  url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=4e0d&last=1'},
+	 {pinyin:'Hen',chinese:'很',tone:'third_tone',
+	  url:'http://www.learnchineseez.com/read-write/traditional/view.php?code=5f88&last=1'}
+	 {pinyin:'Cuo',chinese:'错',tone:'fourth_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=9519&last=2'}
+	 {pinyin:'Na',chinese:'哪',tone:'third_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=54ea&last=2'}
+	 {pinyin:'Chan',chinese:'产',tone:'third_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4ea7&last=3'}
+	 {pinyin:'Pin',chinese:'品',tone:'third_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=54c1&last=3'}
+	 {pinyin:'Yan',chinese:'研',tone:'second_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=7814&last=2'}
+	 {pinyin:'Fa',chinese:'发',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=53d1&last=1'}
+	 {pinyin:'Wu',chinese:'午',tone:'third_tone',
+	  url:'#'}
+	 {pinyin:'Can',chinese:'餐',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=9910&last=5'}
+	 {pinyin:'Chi',chinese:'吃',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5403&last=3'}
+	 {pinyin:'Dong',chinese:'东',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4e1c&last=2'} 
+	 {pinyin:'Xi',chinese:'西',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=897f&last=2'}
+	 {pinyin:'Xie',chinese:'谢',tone:'fourth_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=8c22&last=1'}
+	 {pinyin:'Gong',chinese:'工',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5de5&last=1'}
+	 {pinyin:'Cheng',chinese:'程',tone:'second_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=7a0b&last=1'}
+	 {pinyin:'Shi',chinese:'师',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=5e08&last=2'}
+	 {pinyin:'Ji',chinese:'机',tone:'first_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=673a&last=1'}
+	 {pinyin:'Xie',chinese:'械',tone:'fourth_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=68b0&last=7'}
+	 {pinyin:'Ying',chinese:'硬',tone:'fourth_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=786c&last=3'} 
+	 {pinyin:'Ti',chinese:'体',tone:'third_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4f53&last=2'}
+	 {pinyin:'Ye',chinese:'业',tone:'fourth_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=4e1a&last=2'}
+	 {pinyin:'Wu',chinese:'务',tone:'fourth_tone',
+	  url:'http://www.learnchineseez.com/read-write/simplified/view.php?code=52a1&last=3'}           
 	];
 
 	var current_index = 0;
