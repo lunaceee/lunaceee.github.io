@@ -1,0 +1,141 @@
+body{
+	background-image:url('../img/panda.jpg');
+}
+
+#info{
+	width:80%;
+	display:block;
+	color:#888;
+	margin:auto;
+	padding-top:1em;
+	font-family:Raleway;
+	font-size:18px;
+	text-align: center;
+}
+
+#chinese{
+	width:80%;
+	display:block;
+	color:#0F0F0F;
+	margin:auto;
+	padding-top:2em;
+	font-family:Raleway;
+	font-size:36px;
+	text-align:center;
+}
+
+#results{
+	width:50%;
+	display:block;
+	font-size:1em;
+	font-family:Raleway;
+	border:1px solid #ddd;
+	margin:auto;
+	margin-top:30px;
+	padding:10px;
+	text-align:left;
+	min-height:150px;
+}
+
+button{
+	display:inline;
+	margin:auto;
+}
+
+#div_button{
+	font-family:Raleway;
+	font-size:1em;
+	margin:auto;
+	width:30%;
+	color:white;
+	border-radius: 6px;
+	margin:auto;
+	padding:5px;
+}
+
+#back_button,#next_button,#redo_button{
+	font-family:Raleway;
+	color:white;
+	font-size:1em;
+	margin:auto;
+	width:32.6%;
+	border-radius: 6px;
+	border-bottom-style:inset;
+	margin:auto;
+	padding:5px;
+}
+
+#ispeech{
+	display:block;
+	margin:auto;
+	padding:auto;
+	margin-top:20px;
+	width:15.8%;
+	overflow:hidden;
+}
+
+#standard_button{
+	font-size:1em;
+	background-color:#666666;
+	color:white;
+	font-family:Raleway;
+	border-radius: 6px;
+	margin:auto;
+	border-bottom-style:inset;
+}
+#div_start{
+	float:right;
+}
+
+#start_button {
+border: 0;
+background-color: transparent;
+padding: 0;
+}
+
+
+.interim {
+    color: gray;
+    }
+
+
+@media only screen and (min-width: 400px) and (max-width: 860px) {
+  	#chinese,#results,#info{
+    float: none;
+    width:auto;
+	}
+
+	#chinese{
+		font-size:2em;
+		font-style:normal;
+	}
+
+	#info{
+		font-size:1em;
+	}
+
+	#div_result{
+		display:block;
+		width:auto;
+	}
+	#div_button{
+		float:left;
+		display:inline;
+		width:100%;
+	}
+
+	#ispeech{
+		display:block;
+		margin:auto;
+		margin-top:10px;
+		width:36%;
+		overflow:hidden;
+	}
+
+	#standard_button{
+		margin:auto;
+		width:94%;
+	}
+}
+
+
