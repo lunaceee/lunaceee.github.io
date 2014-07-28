@@ -199,28 +199,28 @@ function clearResult(){
   final_span.innerHTML = '';
 }
 
-var first_phrase = true;
-var current_phrase = 0;
-function newPhrase(){
-  if(current_phrase == phraseArray.length - 1){
-    return;
-  }
-  first_phrase = false;
-  current_phrase = current_phrase + 1;
-  phrase.innerHTML = phraseArray[current_phrase];
-  pinyin.innerHTML = pinyinArray[current_phrase];
-}
+// var first_phrase = true;
+// var current_phrase = 0;
+// function newPhrase(){
+//   if(current_phrase == phraseArray.length - 1){
+//     return;
+//   }
+//   first_phrase = false;
+//   current_phrase = current_phrase + 1;
+//   phrase.innerHTML = phraseArray[current_phrase];
+//   pinyin.innerHTML = pinyinArray[current_phrase];
+// }
 
 
 
-function previousPhrase(){
-  if (current_phrase == 0){
-    return;
-  }
-  current_phrase = current_phrase - 1;
-  phrase.innerHTML = phraseArray[current_phrase];
-  pinyin.innerHTML = pinyinArray[current_phrase];
-}
+// function previousPhrase(){
+//   if (current_phrase == 0){
+//     return;
+//   }
+//   current_phrase = current_phrase - 1;
+//   phrase.innerHTML = phraseArray[current_phrase];
+//   pinyin.innerHTML = pinyinArray[current_phrase];
+// }
 
 // var current_standard = 0;
 
