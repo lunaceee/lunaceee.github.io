@@ -6,12 +6,12 @@ var ignore_onend = false;
 var start_timestamp;
 
 
-function showStandard(){
-  standard_button.style.visibility = 'visible';
-}
+// function showStandard(){
+//   standard_button.style.visibility = 'visible';
+// }
 
 
-$("textarea").on('paste keyup',showStandard);
+// $("textarea").on('paste keyup',showStandard);
 
 
 function standardAccent(){
