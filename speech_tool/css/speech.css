@@ -68,12 +68,8 @@ body{
     width:80%;
 	}
 
-	#chinese{
-		font-size:2em;
-		font-style:normal;
-	}
-
 	#info{
+		padding:5px;
 		font-size:1em;
 	}
 
