@@ -1,0 +1,27 @@
+
+#info{
+	display:block;
+	width:80%;
+	color:#888;
+	margin:auto;
+	padding-top:1em;
+	font-family:Helvetica;
+	font-size:1.5em;
+	text-align: center;
+}
+
+
+
+@media all and (min-width: 400px) and (max-width: 860px) {
+  	#results,#info,#userinput{
+    float:none;
+    width:80%;
+	}
+
+	#info{
+		font-size:1em;
+	}
+
+}
+
+
