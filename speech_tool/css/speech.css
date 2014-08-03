@@ -4,6 +4,7 @@ body{
 
 #info{
 	display:block;
+	width:80%;
 	color:#888;
 	margin:auto;
 	padding-top:1em;
@@ -62,7 +63,7 @@ body{
     }
 
 
-@media only screen and (min-width: 380px) and (max-width: 860px) {
+@media only screen and (min-width: 400px) and (max-width: 860px) {
   	#results,#info,#userinput{
     float:none;
     width:80%;
