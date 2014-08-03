@@ -12,9 +12,8 @@ body{
 	text-align: center;
 }
 
-
 #results,#userinput{
-	width:50%;
+	width:80%;
 	display:block;
 	font-size:1em;
 	font-family:Helvetica;
@@ -52,9 +51,9 @@ body{
 }
 
 #start_button {
-border: 0;
-background-color: transparent;
-padding: 0;
+	border: 0;
+	background-color: transparent;
+	padding: 0;
 }
 
 
@@ -63,10 +62,10 @@ padding: 0;
     }
 
 
-@media only screen and (min-width: 400px) and (max-width: 860px) {
-  	#results,#info{
+@media only screen and (min-width: 380px) and (max-width: 860px) {
+  	#results,#info,#userinput{
     float: none;
-    width:auto;
+    width:80%;
 	}
 
 	#chinese{
@@ -82,13 +81,12 @@ padding: 0;
 		display:block;
 		margin:auto;
 		margin-top:10px;
-		width:36%;
+		width:auto;
 		overflow:hidden;
 	}
 
-	#userinput{
-		width:auto;
-		margin-top:5em;
+	#standard_button, #redo_button{
+		font-size:.5em;
 	}
 }
 
