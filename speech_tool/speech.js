@@ -6,17 +6,17 @@ var ignore_onend = false;
 var start_timestamp;
 
 
-// function showStandard(){
-//   standard_button.style.visibility = 'visible';
-// }
+function showStandard(){
+  standard_button.style.visibility = 'visible';
+}
 
 
-// $("textarea").on('paste keyup',showStandard);
+$("textarea").on('paste keyup',showStandard);
 
 
 function standardAccent(){
   val_of_textarea = $('#userinput').val();
-  var url = 'http://api.ispeech.org/api/rest?apikey=7955b90cb40f63db22de72cd2822df49%20&action=convert&text='+ val_of_textarea +'&voice=chchinesefemale&format=mp3&speed=1';
+  var url = 'http://translate.google.com/translate_tts?tl=zh_CN&q='+ val_of_textarea;
   var myWindow = window.open(url,"width=200,height=100");
 }
 
@@ -187,12 +187,12 @@ function showButtons(style) {
   }
   current_style = style;
   redo_button.style.display = style;
-  // standard_button.style.display = style;
+  standard_button.style.display = style;
 
-  // // console.log('back');
-  // // if (first_phrase == false){
-  // //   back_button.style.display = style;
-  // }
+  console.log('back');
+  if (first_phrase == false){
+    back_button.style.display = style;
+  }
 }
 
 function clearResult(){

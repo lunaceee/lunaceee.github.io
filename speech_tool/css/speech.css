@@ -30,7 +30,7 @@ body{
 	margin-top:5em;
 }
 
-#redo_button{
+#standard_button, #redo_button{
 	display:block;
 	font-size:1.2em;
 	color:white;
@@ -81,7 +81,7 @@ body{
 		overflow:hidden;
 	}*/
 
-	#redo_button{
+	#standard_button,#redo_button{
 		padding:5px;
 		font-size:1em;
 	}
