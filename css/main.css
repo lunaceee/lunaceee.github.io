@@ -182,8 +182,8 @@ main {
 		color: #f2ead6;
 		background-color: rgba(0,0,0,0.6);
 	}
-
- Slide 4 
+ 
+/* Slide 4 */
 #slide-4 .bcg {background-image:url('img/earthmoon.jpg')}
 #slide-4 .hsContent {
 	margin-left: -450px;
