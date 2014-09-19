@@ -174,7 +174,7 @@ main {
 }
 
 /* Slide 3 */
-/*#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
+#slide-3 .bcg {background-image:url('img/moonlight.jpg')}
 #slide-3 .hsContent {
 	margin-left: -239px;
 }
@@ -184,7 +184,7 @@ main {
 	}
 
  Slide 4 
-#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
+#slide-4 .bcg {background-image:url('img/earthmoon.jpg')}
 #slide-4 .hsContent {
 	margin-left: -450px;
 }
@@ -192,7 +192,7 @@ main {
 		background: none;
 		padding-left: 0;
 		padding-right: 0;
-	}*/
+	}
 
 /* ==========================================================================
    Helper classes
