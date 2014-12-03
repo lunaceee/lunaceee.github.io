@@ -1,0 +1,235 @@
+body{
+  margin:0;
+}
+
+.site-logo{
+  font-size:3em;
+  margin-top:200px;
+}
+
+.site-quotes{
+  margin-top:3.5em;
+}
+
+header{
+  font-size:20px;
+  color:white;
+  background-image:url(../img/header-image.png);
+  background-position: center top;
+  background-size: 100%;
+  height: 18em;
+  padding: 5.0em .50em;
+}
+
+.homenavbar{
+  width:48%;
+  padding:0;
+  margin:auto;
+  margin-top: 70px;
+}
+
+
+#homeul li{
+  display:inline-block;
+  position:relative;
+  padding:.5em;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#homeul a{
+  color:white;
+  text-decoration: none;
+}
+
+#homeul li:hover{
+  color:black;
+  background-color: rgba(219, 102, 50, 0.54);
+}
+
+ul li ul{
+  position: absolute;
+  left:-1em;
+  top:4.4em;
+  width:146px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: block;
+  opacity: 0;
+  visibility: visible;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+ul li ul li { 
+  width:100%;
+  padding:0;
+  background: rgba(170,170,170,.5); 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+
+ul li:hover ul {
+  margin-top:-2.4em;
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.home-sub-nav{
+  padding:0;
+  position:absolute;
+}
+
+.home-sub-nav li{
+  padding:0;
+  display:block;
+}
+
+.feature-story{
+  border-color:rgba(126, 126, 103, 0.45);
+  border-width:1em;
+  margin:auto;
+  margin-top:3em;
+  padding-top:1em;
+  width:60em;
+  height:35em;
+  color:rgb(255, 255, 255);
+  background-image:url("../img/feature-story-image-2.jpg");
+  background-size:100%;
+}
+
+.feature-story h2{
+  padding-top:.5em;
+  padding-left:.5em;
+  padding-right:1em;
+}
+
+.feature-story-intro{
+  margin-top:23.9em;
+  height:155px;
+  background-color:rgba(215, 209, 209, 0.42);
+}
+
+.home-texonomy button{
+  display:inline-block;
+  padding-right:.5em;
+}
+
+.feature-story p{
+  padding-left:1em;
+}
+
+#the-magazine-nav{
+  width:95%;
+  position: relative;
+  margin-bottom:1em;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+#the-magazine-nav li{
+  display:inline;
+}
+
+#mag-left-nav{
+  font-size:small;
+  text-align:left;
+  margin-top:2em;
+}
+
+#mag-center-nav{
+  text-align: center;
+  margin-left:12em;
+}
+
+#mag-right-nav{
+  font-size:small;
+  text-align: right;
+  margin-top:2em;
+  float:right;
+}
+
+#mag-right-nav li{
+  padding-right:5px;
+}
+
+#story-thumbs{
+  width:74%;
+  margin: auto;
+}
+
+#front-story{
+  margin-left:9.2em;
+  width:auto;
+}
+
+.more {
+text-align: center;
+position: relative;
+z-index: 2;
+clear:both;
+}
+
+.more a{
+  color:grey;
+}
+
+.front-story-padding{
+  padding-bottom:6em;
+}
+
+.issue-no a{
+  color:black;
+}
+
+.readMore{
+  color:grey;
+}
+
+
+
+#home-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0A0808;
+  border-top: 1px solid #DCDCDC;
+  height: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+#copyright{
+  width:38%;
+}
+
+#footerNav {
+  width:auto;
+}
+
+#footerNav li{
+  display: inline;
+  padding-left:1em;
+}
+
+#footerNav a{
+  color:white;
+}
+
+
+
