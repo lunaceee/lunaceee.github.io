@@ -1,0 +1,843 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif, arial, helvetica, "Hiragino Sans GB", "\5b8b\4f53";
+  background-color: #f1f1f1;
+}
+.menu-padding {
+  padding-top: 40px;
+}
+.et-eca-button {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+  padding-right: 39px;
+  background: url(http://ef-fasco.qiniudn.com/master-page-sprite.png) no-repeat right -1130px #ec008c;
+  _background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite8.png);
+  -webkit-transition: all 0.2s ease-in-out;
+  margin: 0;
+  border: 0;
+}
+.et-eca-button span {
+  width: 255px;
+  display: block;
+  text-align: left;
+  padding: 0 40px 0 15px;
+}
+#ef-hima-header {
+  z-index: 9996;
+  position: relative;
+  height: 135px;
+}
+#gheader-logo {
+  display: block;
+  margin: 36px 0 20px;
+  position: relative;
+  z-index: 1;
+  float: left;
+}
+.ef-fasco-banner {
+  padding-top: 65px;
+  font-size: 14px;
+  padding-right: 40px;
+  color: #fff;
+  font-size: 2rem;
+}
+#et-header {
+  background: url(http://ef-fasco.qiniudn.com/fasco-bg-ef-head.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+#et-header .container {
+  position: relative;
+}
+#et-header .et-header-outer {
+  background-image: url(http://ef-fasco.qiniudn.com/ef-fasco-sprite-x.png);
+}
+#et-header .et-nav {
+  margin-top: 1px;
+  height: 36px;
+  line-height: 36px;
+}
+#et-header .et-nav li {
+  height: 36px;
+  float: left;
+}
+#et-header .et-nav a {
+  padding: 0 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 36px;
+  font-size: 14px;
+  display: inline;
+  float: left;
+  color: #fff;
+}
+#et-header .et-nav a.current {
+  background-color: #4c5658;
+}
+#et-header .et-nav a.current:hover,
+#et-header .et-nav a.current:focus,
+#et-header .et-nav a.current:visited {
+  color: #FFF;
+  text-decoration: none;
+  background-color: #4c5658;
+}
+#et-header .et-nav a:hover,
+#et-header .et-nav a:focus,
+#et-header .et-nav a:visited {
+  color: #FFF;
+  text-decoration: underline;
+  background-color: transparent;
+}
+#et-header .sticky {
+  position: fixed;
+  top: 0;
+  background: rgba(76, 86, 88, 0.8);
+  z-index: 99999;
+  width: 100%;
+  left: 0;
+  margin-top: 0px;
+}
+#et-header .sticky a.current {
+  background: #222;
+}
+#et-header .sticky a.current:hover,
+#et-header .sticky a.current:focus,
+#et-header .sticky a.current:visited {
+  background: #222;
+}
+#et-header .main-panel {
+  position: absolute;
+  z-index: 5;
+  width: 340px;
+  background-color: white;
+  margin: 0 auto;
+  top: 40px;
+  right: 130px;
+}
+@media (max-width: 768px) {
+  #et-header .main-panel {
+    right: inherit;
+  }
+}
+#et-header .main-panel h3 {
+  height: 21px;
+  width: 100%;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 38px;
+  color: #003f5f;
+}
+#et-header .main-panel h3 span {
+  display: block;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ec008c;
+}
+#et-header .main-panel form {
+  width: 340px;
+  padding: 1px 20px 20px;
+  font-size: 16px;
+}
+#et-header .main-panel form input {
+  margin-bottom: 16px;
+}
+#et-header .main-panel .btn-register {
+  color: #ff0054;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  float: right;
+}
+#et-header .main-panel .btn-register a:hover,
+#et-header .main-panel .btn-register a:visited {
+  color: #ff0054;
+}
+#et-header .main-panel .inputError2 {
+  border-color: #ff0054;
+}
+#et-header .main-panel label.inputError2 {
+  display: none !important;
+}
+#et-header .testing-panel {
+  display: none;
+  opacity: 0;
+  padding-top: 16px;
+}
+.et-hima-footer {
+  display: none;
+}
+.ef-fasco-hima .testing-panel {
+  min-height: 340px;
+}
+.ef-fasco-hima .et-hima-result1 {
+  display: none !important;
+}
+.ef-fasco-hima .et-fasco-hima-result {
+  display: none;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  font: 13px/1.231 arial, helvetica, clean, sans-serif, "Hiragino Sans GB", "\5b8b\4f53";
+}
+.ef-fasco-hima .et-fasco-hima-result p {
+  margin-bottom: 1em;
+}
+.ef-fasco-hima .et-fasco-hima-result .ec-hima-summary {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+.ef-fasco-hima .et-fasco-hima-result .ec-hima-note {
+  position: relative;
+  padding: 0 0 35px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #888;
+}
+.ef-fasco-hima .et-fasco-hima-result .ec-hima-scores {
+  margin: 25px 0;
+  color: #555;
+}
+.ef-fasco-hima .et-fasco-hima-result .ec-hima-scores .ec-hima-score-name {
+  margin: 0;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 25px;
+}
+.ef-fasco-hima .et-fasco-hima-result .ec-hima-scores .ec-hima-score-bar {
+  margin: 0 0 10px;
+  width: 370px;
+  border: 1px solid #aaa;
+  height: 42px;
+}
+.ef-fasco-hima .et-fasco-hima-result .ec-hima-scores .ec-hima-score {
+  display: block;
+  text-indent: 20px;
+  background: #b8d728;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 40px;
+  width: 0%;
+}
+.footer {
+  margin: 0;
+  padding: 23px 55px 30px 55px;
+  color: #999;
+  font: 13px/1.231 arial, helvetica, clean, sans-serif, "Hiragino Sans GB", "\5b8b\4f53";
+}
+.footer .legal {
+  margin: 20px 0 0;
+  padding: 15px 0;
+  overflow: hidden;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+}
+.footer .legal li {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .legal li a {
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  font-size: 85%;
+  float: left;
+  border-right: 1px solid #aaa;
+  color: #999;
+}
+.footer .legal li a:hover {
+  color: #605e5e;
+}
+.footer .copyright {
+  font-size: 90%;
+  color: #707070;
+  text-align: center;
+  line-height: 1rem;
+}
+.footer .contactus {
+  font-size: 90%;
+  margin: 10px auto;
+  color: #707070;
+  text-align: center;
+}
+.footer .contactus span {
+  padding: 0 5px;
+  border-right: 1px solid #707070;
+}
+.footer .contactus span:last-child {
+  border: 0;
+}
+.footer .contactus a:hover,
+.footer .contactus a:visited,
+.footer .contactus a:active,
+.footer .contactus a:focus {
+  color: #707070;
+}
+.ef-fasco-course #et-header {
+  background: url(http://ef-fasco.qiniudn.com/ef-fasco-course-1.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  height: 460px;
+  position: relative;
+}
+.ef-fasco-course #et-header .et-cnsp2013-billboard-info-text {
+  width: 410px;
+  background-color: #f4f7f9;
+  left: 0;
+  margin: 24px 0;
+  padding: 2px 20px;
+  font: 14px/1.231 MicroSoft Yahei, arial, helvetica, clean, sans-serif;
+  color: #3f4a5a;
+}
+.ef-fasco-course #et-header .et-cnsp2013-billboard-info-text h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.ef-fasco-course #et-header .et-cnsp2013-billboard-info-text p {
+  padding: 0 0 20px 0;
+  line-height: 1.7rem;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  _bottom: -1px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul {
+  width: 920px;
+  margin: 0 auto;
+  padding: 0;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li {
+  float: left;
+  height: 70px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li a {
+  display: block;
+  height: 70px;
+  width: 180px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li a .et-cnsp2013-ourcourse-overview {
+  width: 23px;
+  height: 100%;
+  background-position: -139px -405px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.current a,
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li:hover a {
+  background-color: #f1f1f1;
+  color: #666;
+  text-decoration: none;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.current .et-cnsp2013-ourcourse-overview,
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li:hover .et-cnsp2013-ourcourse-overview {
+  background-position: -139px -778px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.current .et-cnsp2013-ourcourse-learn,
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li:hover .et-cnsp2013-ourcourse-learn {
+  background-position: -139px -854px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.current .et-cnsp2013-ourcourse-try,
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li:hover .et-cnsp2013-ourcourse-try {
+  background-position: -139px -922px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.current .et-cnsp2013-ourcourse-apply,
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li:hover .et-cnsp2013-ourcourse-apply {
+  background-position: -139px -990px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.current .et-cnsp2013-ourcourse-certification,
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li:hover .et-cnsp2013-ourcourse-certification {
+  background-position: -139px -1064px;
+}
+.ef-fasco-course #et-header .et-cnsp2013-top-menu ul li.line {
+  width: 1px;
+  overflow: hidden;
+  background-color: #4f4b47;
+}
+.ef-fasco-about {
+  font: 14px/1.231 MicroSoft Yahei, arial, helvetica, clean, sans-serif;
+  color: #3f4a5a;
+}
+.ef-fasco-about .bs-sidenav-title {
+  position: relative;
+  display: block;
+}
+.ef-fasco-about .nav {
+  width: 210px;
+  float: left;
+}
+.ef-fasco-about .nav li {
+  width: 210px;
+  float: left;
+  border-bottom: solid 1px #ccc;
+}
+.ef-fasco-about .nav li a,
+.ef-fasco-about .nav li span {
+  width: 216px;
+  display: block;
+  float: left;
+  padding: 10px 0 10px 10px;
+  line-height: 20px;
+  color: #3f4a5a;
+}
+.ef-fasco-about .nav li a:hover,
+.ef-fasco-about .nav li a.current {
+  background-color: #3f4a5a;
+  color: #fff;
+  text-decoration: none;
+}
+.ef-fasco-about .nav li span {
+  cursor: default;
+}
+.ef-fasco-about #et-header {
+  background: url(http://ef-fasco.qiniudn.com/fasco-about-1-3.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  height: 400px;
+}
+.ef-fasco-about .about-section {
+  width: 848px;
+  padding: 0 0 50px 0;
+}
+.ef-fasco-about .et-float-l {
+  float: left;
+  width: 380px;
+}
+.ef-fasco-about .et-float-r {
+  width: 320px;
+  float: right;
+}
+.ef-fasco-about #about-student-case .student {
+  padding: 0 0 30px 0;
+}
+.ef-fasco-about #about-student-case .student p {
+  line-height: 1.6rem;
+}
+.ef-fasco-about .et-about-us-cambridge {
+  margin-top: 50px;
+}
+.ef-fasco-school #et-header {
+  background: url(http://ef-fasco.qiniudn.com/ef-fasco-center.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  height: 445px;
+}
+.ef-fasco-customize #et-header {
+  background: url(http://ef-fasco.qiniudn.com/ef-fasco-customize.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  height: 814px;
+}
+.ef-fasco-customize .level-mapping {
+  color: #333;
+}
+.ef-fasco-customize .level-mapping:hover,
+.ef-fasco-customize .level-mapping:focus,
+.ef-fasco-customize .level-mapping:visited {
+  color: #333;
+  text-decoration: none;
+}
+.ef-fasco-customize .fasco-offer-container {
+  display: block;
+  width: 900px;
+  text-align: center;
+  margin: 30px auto 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-intro {
+  padding: 24px 30px;
+  background: #4c5658;
+  display: block;
+  width: 100%;
+  color: #fff;
+  line-height: 28px;
+  font-size: 18px;
+  text-align: left;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer {
+  float: left;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer .ef-fasco-offer-name {
+  border-top: 1px solid #b1b1af;
+  border-bottom: 1px solid #b1b1af;
+  font-size: 18px;
+  font-weight: bold;
+  height: 46px;
+  line-height: 46px;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer .ef-fasco-desc {
+  min-height: 126px;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer .ef-fasco-desc > div {
+  margin: 10px 0;
+  display: block;
+  min-height: 24px;
+  width: 100%;
+  font-size: 90%;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer .camp-offer-desc {
+  margin: 10px 0;
+  min-height: 160px;
+  font-size: 0.9rem;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer button,
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer a {
+  width: 100%;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer button s,
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer a s {
+  text-decoration: inherit;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-offer {
+  padding: 36px;
+  width: 300px;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-packages {
+  clear: both;
+  width: 700px;
+  margin: 0 auto;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-packages-11 {
+  width: 900px;
+  clear: both;
+}
+.ef-fasco-customize .fasco-offer-container .ef-fasco-packages-11 .ef-fasco-offer {
+  padding: 40px;
+  width: 300px;
+}
+.school-table-container {
+  margin: 263px 0 20px;
+}
+.school-table {
+  font: 14px/1.231 MicroSoft Yahei, arial, helvetica, clean, sans-serif;
+  color: #3f4a5a;
+  background-color: #d1d1d1;
+  width: 100%;
+  border-spacing: 1px;
+  border-collapse: separate;
+  border-top: 10px solid #7bacb0;
+}
+.school-table td {
+  background-color: #fff;
+  padding: 18px;
+}
+.school-table tbody {
+  border-spacing: 1px;
+  border-collapse: separate;
+  border-top: 2px solid #7bacb0;
+}
+.ef-fasco-hima a {
+  outline: 0;
+  text-decoration: none;
+}
+.ef-fasco-hima .et-cnsp2013-icons-margin-right-10 {
+  margin-right: 10px;
+}
+.ef-fasco-hima .et-cnsp2013-icons {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  overflow: hidden;
+  zoom: 1;
+}
+.ef-fasco-hima .et-cnsp2013-top-menu li a .et-cnsp2013-ourcourse-overview {
+  width: 23px;
+  height: 100%;
+  background-position: -139px -405px;
+}
+.ef-fasco-hima .et-cnsp2013-top-menu li a .et-cnsp2013-ourcourse-learn {
+  width: 21px;
+  height: 100%;
+  background-position: -139px -481px;
+}
+.ef-fasco-hima .et-cnsp2013-top-menu li a .et-cnsp2013-ourcourse-try {
+  width: 22px;
+  height: 100%;
+  background-position: -139px -549px;
+}
+.ef-fasco-hima .et-cnsp2013-top-menu li a .et-cnsp2013-ourcourse-apply {
+  width: 30px;
+  height: 100%;
+  background-position: -139px -617px;
+}
+.ef-fasco-hima .et-cnsp2013-top-menu li a .et-cnsp2013-ourcourse-certification {
+  width: 15px;
+  height: 100%;
+  background-position: -139px -691px;
+}
+.ef-fasco-hima .et-cnsp2013-loginBar .et-cnsp2013-logo a,
+.ef-fasco-hima .et-cnsp2013-master-imgs,
+.ef-fasco-hima .et-cnsp2013-icons-location,
+.ef-fasco-hima .et-cnsp2013-icons-arrow-down,
+.ef-fasco-hima .et-cnsp2013-icons,
+.ef-fasco-hima .et-eca-button-blue,
+.ef-fasco-hima .et-eca-btn-videoplay,
+.ef-fasco-hima .et-cnsp2013-qrcode,
+.ef-fasco-hima .et-eca-lightbox-close,
+.ef-fasco-hima a.et-eca-lightbox-close,
+.ef-fasco-hima a.et-eca-lightbox-close:visited,
+.ef-fasco-hima a.et-eca-lightbox-close:hover,
+.ef-fasco-hima .et-eca-videolist-toggle-current-icon {
+  background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite.png);
+  _background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite8.png);
+  background-repeat: no-repeat;
+}
+.ef-fasco-hima .et-cnsp2013-body {
+  padding-bottom: 100px;
+  font: 14px/1.231 MicroSoft Yahei, arial, helvetica, clean, sans-serif;
+  color: #3f4a5a;
+}
+.ef-fasco-hima .et-cnsp2013-body {
+  position: relative;
+  z-index: 3;
+  width: 980px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.ef-fasco-hima .et-clear {
+  zoom: 1;
+}
+.ef-fasco-hima .et-clear:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.ef-fasco-hima .et-float-l {
+  float: left;
+}
+.ef-fasco-hima .et-float-r {
+  float: right;
+}
+.ef-fasco-hima .et-cnsp2013-border-bottom {
+  border-bottom: solid 1px #dadada;
+  padding-bottom: 30px;
+}
+.ef-fasco-hima .et-cnsp2013-margin-top-30 {
+  margin-top: 30px;
+}
+.ef-fasco-hima .et-cnsp2013-innerpage-text .title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.ef-fasco-hima .et-cnsp2013-innerpage-text .p {
+  font-size: 14px;
+}
+.ef-fasco-hima .et-cnsp2013-courseInner {
+  padding: 0 30px;
+  width: 980px;
+}
+.ef-fasco-hima .et-eca-button:active,
+.ef-fasco-hima .et-eca-button-blue:active {
+  color: #fff;
+}
+.ef-fasco-hima .et-eca-button:visited,
+.ef-fasco-hima .et-eca-button-blue:visited {
+  color: #fff;
+}
+.ef-fasco-hima .et-eca-button:link,
+.ef-fasco-hima .et-eca-button-blue:link {
+  color: #fff;
+}
+.ef-fasco-hima .et-eca-button:hover,
+.ef-fasco-hima .et-eca-button-blue:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #be0071;
+}
+.ef-fasco-hima .et-eca-button,
+.ef-fasco-hima .et-eca-button-blue {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+  padding-right: 39px;
+  background: url(http://ef-fasco.qiniudn.com/master-page-sprite.png) no-repeat right -1130px #ec008c;
+  _background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite8.png);
+  -webkit-transition: all 0.2s ease-in-out;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+}
+.ef-fasco-hima .et-eca-coursepage-video {
+  width: 660px;
+  height: 403px;
+}
+.ef-fasco-hima a.et-eca-btn-video,
+.ef-fasco-hima a.et-eca-btn-video:visited,
+.ef-fasco-hima a.et-eca-btn-video:hover,
+.ef-fasco-hima a.et-eca-btn-video-middle,
+.ef-fasco-hima a.et-eca-btn-video-middle:visited,
+.ef-fasco-hima a.et-eca-btn-video-middle:hover,
+.ef-fasco-hima a.et-eca-btn-video-small,
+.ef-fasco-hima a.et-eca-btn-video-small:visited,
+.ef-fasco-hima a.et-eca-btn-video-small:hover,
+.ef-fasco-hima a.et-eca-btn-ligntbox-video-small,
+.ef-fasco-hima a.et-eca-btn-ligntbox-video-small:visited,
+.ef-fasco-hima a.et-eca-btn-ligntbox-video-small:hover {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+.ef-fasco-hima a .et-eca-btn-videoplay,
+.ef-fasco-hima a:visited .et-eca-btn-videoplay,
+.ef-fasco-hima a:hover .et-eca-btn-videoplay,
+.ef-fasco-hima a .et-eca-btn-videoplay-middle,
+.ef-fasco-hima a:visited .et-eca-btn-videoplay-middle,
+.ef-fasco-hima a:hover .et-eca-btn-videoplay-middle,
+.ef-fasco-hima a .et-eca-btn-videoplay-small,
+.ef-fasco-hima a:visited .et-eca-btn-videoplay-small,
+.ef-fasco-hima a:hover .et-eca-btn-videoplay-small {
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.ef-fasco-hima .et-eca-btn-videoplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+  width: 70px;
+  height: 70px;
+  background-position: -408px -65px;
+  background-color: transparent;
+}
+.ef-fasco-hima .et-cnsp2013-loginBar .et-cnsp2013-logo a,
+.ef-fasco-hima .et-cnsp2013-master-imgs,
+.ef-fasco-hima .et-cnsp2013-icons-location,
+.ef-fasco-hima .et-cnsp2013-icons-arrow-down,
+.ef-fasco-hima .et-cnsp2013-icons,
+.ef-fasco-hima .et-eca-button-blue,
+.ef-fasco-hima .et-eca-btn-videoplay,
+.ef-fasco-hima .et-cnsp2013-qrcode,
+.ef-fasco-hima .et-eca-lightbox-close,
+.ef-fasco-hima a.et-eca-lightbox-close,
+.ef-fasco-hima a.et-eca-lightbox-close:visited,
+.ef-fasco-hima a.et-eca-lightbox-close:hover,
+.ef-fasco-hima .et-eca-videolist-toggle-current-icon {
+  background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite.png);
+  _background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite8.png);
+  background-repeat: no-repeat;
+}
+.ef-fasco-hima .et-cnsp2013-courseInner table.course-overview {
+  background-color: #d1d1d1;
+  width: 100%;
+  border-spacing: 1px;
+  border-collapse: separate;
+  border-top: 10px solid #7bacb0;
+}
+.ef-fasco-hima .et-cnsp2013-courseInner table.course-overview tr.course-overview-row {
+  background-color: #e9e7e4;
+}
+.ef-fasco-hima .et-cnsp2013-courseInner table.course-overview tr.course-overview-row td {
+  background-color: #e9e7e4;
+}
+.ef-fasco-hima .et-cnsp2013-courseInner table.course-overview td {
+  background-color: #fff;
+  font-size: 13px;
+  padding: 20px;
+}
+.ef-fasco-course-learn #et-header {
+  background: url(http://ef-fasco.qiniudn.com/ef-fascocourse-learn.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.ef-fasco-course-try #et-header {
+  background: url(http://ef-fasco.qiniudn.com/ef-fasco-course-try.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.ef-fasco-course-certification #et-header {
+  background: url(http://ef-fasco.qiniudn.com/ef-fasco-course-certification.jpg) 100% 100% no-repeat;
+  background-size: cover;
+}
+.ef-fasco-course-certification .et-eca-arrow-blue {
+  background-position: -12px -145px;
+}
+.et-eca-arrow-pink,
+.et-eca-arrow-white,
+.et-eca-arrow-blue {
+  background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite.png);
+  _background-image: url(http://ef-fasco.qiniudn.com/master-page-sprite8.png);
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 10px;
+  background-color: transparent;
+  display: inline-block;
+  background-position: left -145px;
+}
+.thank .fasco-offer-container {
+  margin-top: 60px;
+  min-height: 350px;
+}
+.thank .fasco-offer-container .ef-fasco-intro {
+  background-color: #ec008c;
+  text-align: center;
+}
+.thank .et-eca-offers-private-policy {
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 18px 0 18px 0;
+  _text-align: left;
+  font-size: 16px;
+  color: #3f4a5a;
+}
+.thank .et-eca-offers-call {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3e4756;
+  font-size: 22px;
+  line-height: 130%;
+  _text-align: center;
+}
+#agreementModal {
+  z-index: 10000;
+  color: #333;
+  font-size: 0.65rem;
+}
+#agreementModal ul,
+#agreementModal li {
+  list-style: none;
+}
+#agreementModal ul {
+  padding-left: 0;
+}
+#agreementModal ul ul {
+  padding-left: 1rem;
+}
+#agreementModal li {
+  margin-bottom: 0.375rem;
+}
+#agreementModal .modal-body {
+  height: 450px;
+  overflow: scroll;
+}
