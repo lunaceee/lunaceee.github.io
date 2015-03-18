@@ -42,7 +42,9 @@
 			margin-bottom: 2em !important;
 		}
 
-	
+	.aboutus #header-wrapper{
+		background-image: url('images/sda-header2.jpg');
+	}
 
 	/* Button */	
 	
@@ -252,6 +254,7 @@
 			background-image: url('images/sda-header.jpg');
 	}
 		}
+
 	
 	#main-wrapper
 	{
@@ -262,6 +265,17 @@
 		{
 			padding-top: 0;
 		}
+
+
+	.aboutus #header-wrapper
+		{
+			padding-top: 22em;
+			background-image: url('images/sda-header2.jpg');
+	}
+
+	.aboutus #main-wrapper{
+		padding-top:0;
+	}
 
 	/*#footer-wrapper
 	{

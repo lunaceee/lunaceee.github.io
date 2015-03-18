@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Online Classroom</title>
+		<title>EFCS SDA Training Project</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -16,6 +16,19 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+
+
+
+		<!-- Add fancyBox -->
+    	<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+		<script src="source/helpers/jquery.fancybox-media.js"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel='stylesheet' href="css/overlay.css" />
+
+
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -23,8 +36,13 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	
 	</head>
-	<body class="left-sidebar">
+
+
+
+
+	<body>
 
 		<!-- Header Wrapper -->
 			<div id="header-wrapper">
@@ -40,7 +58,15 @@
 								<!-- Nav -->
 									<nav id="nav">
 										<ul>
-											<li class="current_page_item"><a href="about.html">关于山航在线英语课程</a></li>
+											<Li class="current_page_item"><a href="index.html">首页</a></Li>
+											<li><a href="">关于我们</a>
+												<ul>
+													<li><a href="boss.html">领导寄语</a></li>
+													<li><a href="about-ef.html">关于英孚</a></li>
+												</ul>
+
+
+											</li>
 											<li>
 												<a href="">学员生活</a>
 												<ul>
@@ -51,13 +77,24 @@
 													</li>
 												</ul>
 											</li>
-											<li><a href="online-classroom.html">在线课堂</a></li>
+											<li><a href="online-classroom.html">课程页面</a>
+											<ul>
+												<li><a href="#onlineclass">登陆在线课堂</a></li>
+												<li><a href="#iphoneapp">iPhone及iPad应用程序下载</a></li>
+												<li><a href="#faq">常见问题</a></li>
+											</ul>
+
+											</li>
 											<li><a href="contact-us.html">联系我们</a></li>
 										</ul>
 									</nav>
 							
 							</div>
+														
 						</header>
+
+
+						
 
 				</div>
 			</div>
@@ -69,24 +106,27 @@
 	<div id="main-wrapper">
 		<div class="wrapper style1" style="margin-bottom:3em">
 						<div class="inner">
+						
+
 							<div class="container box feature2">
 
 																		
 									<!-- online class -->
-									<div class="12u">		
-										<div id="onlineclass">
-											<iframe src="http://corporatebeta.englishtown.cn/partner/Corp/default.aspx" width="990px" height="640px" scrolling="no"></iframe>
-											<h3>初次使用英孚在线课程的学员请点击观看学校演示,或通过以下使用指南快速进入课堂开始学习</h3>
+									
+
+										<div class="12u">		
+											<div id="onlineclass">	
+
+												<iframe src="http://corporatebeta.englishtown.cn/partner/Corp/default.aspx" width="990px" height="640px" scrolling="no"></iframe>
+										</div>
+										<p><strong>初次使用英孚在线课程的学员请点击观看学校演示,快速进入课堂开始学习</strong></p>
+											
+											</section>								
+			
 										</div>
 									</div>
 						<!-- Sidebar -->
-								<div class="row">
-										<section class="12u">
-											<a href="http://issuu.com/ef-clt/docs/c13_user-guide_cn/8?e=0" class="button icon fa-info-circle">在线课程使用指南</a>
-											<a href="http://issuu.com/ef-clt/docs/cabin-crew-user-guide-cn/2?e=0" class="button icon fa-info-circle coursemenu menumobile">客舱英语使用指南</a>																				
-										</section>								
-			
-								</div>								
+														
 							</div>
 						</div>
 		</div>
@@ -98,7 +138,7 @@
 				<section class="container box feature2">
 					<div class="row">
 							<section class="6u">
-								<h2>iPhone应用程序</h2>
+								<h2 id="iphoneapp">iPhone应用程序</h2>
 								<div class="sideimage"><img src="images/ef-iphone.jpg" width="280px"/></div>
 									<ul>
 										<li>通过iPhone手机客户端，您将免费获取以下内容:
@@ -115,7 +155,7 @@
 									</footer>
 							</section>
 							<section class="6u">
-									<h2>iPad应用程序</h2>
+									<h2 id="ipadapp">iPad应用程序</h2>
 									<div class="sideimage"><img src="images/ef-ipad.png" width="230px" /></div>
 									<p>EF Efekta Corporate iPad应用程序包括：
 									<br>内容丰富的电影，语法指导
@@ -140,7 +180,7 @@
 				<div class="row">
 					<div class="12u">
 						<header  class="first major">
-							<h2>常见问题 FAQ</h2>
+							<h2 id="faq">常见问题 FAQ</h2>
 						</header>
 					</div>
 				</div>

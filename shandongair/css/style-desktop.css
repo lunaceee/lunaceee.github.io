@@ -34,12 +34,17 @@
 	
 	.homepage #header-wrapper{
 		background-image: url('images/sda-header.jpg');
-		height:55em;
+		height:45em;
+		background-size: cover;
 	}
+
+	
+
 
 	#banner-wrapper
 	{
 	}
+
 	
 	#main-wrapper
 	{
@@ -47,10 +52,7 @@
 	}
 
 	
-	.coursemenu{
-		margin-left:1em;
-		background-color: #EE7A11;
-	}
+	
 /*
 	#footer-wrapper
 	{
@@ -239,3 +241,32 @@
 	#main
 	{
 	}
+
+/*********************************************************************************/
+/* customized                                                                          */
+/*********************************************************************************/
+
+
+.aboutus #header-wrapper{
+		background-image: url('images/sda-header2.jpg');
+		height:30em;
+	}
+
+	.onlineclass #header-wrapper{
+		background-image: url('images/sda-header2.jpg');
+		height:30em;
+	}
+
+.coursemenu{
+		margin-left:1em;
+		background-color: #EE7A11;
+	}
+
+#reward-content{
+	margin-left:5em;
+}
+
+
+
+
+
