@@ -12,25 +12,23 @@
     margin-right: 0;
 }
 
- --- Link configuration that contains the image and label ----------------------------- 
+/* --- Link configuration that contains the image and label ----------------------------- 
+*/
+
 .viewport a {
     display: block;
     position: relative;
+    border-radius: 8px;
 }
 
-.viewport a img {
-    width:110%;
-    left: -10%;
-    top: -10%;
-}
 
 /* --- Label configuration -------------------------------------------------------------- */
 .viewport a span {
     display: none;
-    font-size: 3.0em;
+    font-size: 1.5em;
     font-weight: bold;
     height: 100%;
-    padding:180px 0;
+    padding:110px 0;
     position: absolute;
     text-align: center;
     text-decoration: none;
@@ -57,11 +55,3 @@
  * You could create multiple hover background classes for different looks depending on the
  * image type. Use your imagination!
  */
-
-
- @media screen and (max-width: 320px) {
-    .viewport a span {
-    
-    padding-top:80px;
-    
-}
