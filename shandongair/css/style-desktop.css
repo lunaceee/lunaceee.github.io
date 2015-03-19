@@ -246,13 +246,17 @@
 /* customized                                                                          */
 /*********************************************************************************/
 
+/*.welcome #header-wrapper{
+	background-image: url('images/welcome01.jpg');
+	height:30em;
+}*/
 
 .aboutus #header-wrapper{
 		background-image: url('images/sda-header2.jpg');
 		height:30em;
 	}
 
-	.onlineclass #header-wrapper{
+.onlineclass #header-wrapper{
 		background-image: url('images/sda-header2.jpg');
 		height:30em;
 	}
@@ -266,7 +270,9 @@
 	margin-left:5em;
 }
 
-
+/*#desktop-gallery{
+	margin-left:6.1em;
+}*/
 
 
 
