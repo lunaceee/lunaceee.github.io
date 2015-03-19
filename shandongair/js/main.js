@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+//fancybox video
 		$(".fancybox").fancybox();
 		
 		$(".various").fancybox({
@@ -14,8 +15,13 @@ $(document).ready(function() {
 		closeEffect	: 'none'
 	});
 
+//fancybox gallery
+$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
 
-		// home page video fancybox
+// home page video fancybox
 	$('.viewport').mouseenter(function(e) {
 				// $(this).children('a').children('img').animate({ left: '0', top: '0', width: '100%'}, 100);
 				$(this).children('a').children('span').fadeIn(200).css("display","block");
@@ -24,9 +30,28 @@ $(document).ready(function() {
 				$(this).children('a').children('span').fadeOut(200);
 			});
 
+//fancybox lucky student
+	$("#single_1,#single_2,#single_3").fancybox({
+          helpers: {
+              title : {
+                  type : 'float'
+              }
+          }
+      });
 
 
-		// course page tabs
+//load more
 
+	var $group = $('.group');
+
+	$("#load-more").click(function() {
+    
+    	if ($(this).hasClass('disable')) return false;
+
+    	var $hidden = $group.filter(':hidden:first').addClass('active');
+    	if (!$hidden.next('.group').length) {
+        $(this).addClass('disable');
+    	}
+	});
 
 });

@@ -375,7 +375,7 @@
 		.image
 		{
 			position: relative;
-			/*display: inline-block;*/
+			display: inline;
 		}
 		
 			.image img
@@ -389,7 +389,7 @@
 				Adds a grain-y overlay to your images. Delete this entire rule if
 				that's not something you want.
 			*/
-			.image:before
+			/*.image:before
 			{
 				content: '';
 				display: block;
@@ -400,7 +400,7 @@
 				width: 100%;
 				height: 100%;
 				opacity: 0.75;
-			}
+			}*/
 
 			.image.fit
 			{
@@ -410,13 +410,11 @@
 		
 			.image.featured
 			{
-
-				display: block;
+				display:block;
 				width: 100%;
 				cursor:pointer;
 
 			} 
-
 
 			.image.left
 			{
@@ -430,11 +428,12 @@
 				margin: 0 0 2.5em 0;
 			}
 
-				.image.centered img
-				{
-					margin: 0 auto;
-					width: auto;
-				}
+			.image.centered img
+			{
+				margin: 0 auto;
+				width: auto;
+			}
+
 
 	/* Button */
 
@@ -1116,10 +1115,32 @@ margin-right: -0.25em;
 
 
 
+/* load more */
 
+.group {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
 
+.group.active {
+    display: block;
+}
 
+#load-more.disable {
+    color: #AAA;
+    text-decoration: none;
+    cursor: default;
+}
 
+#load-more{
+	margin-top:2em;
+	text-align: center;
+}
+
+#csemail:hover{
+	color:red;
+}
 
 
 

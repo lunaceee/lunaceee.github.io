@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
     border-radius: 8px;
+    height:250px;
 
 }
 
@@ -34,6 +35,7 @@
     text-decoration: none;
     width: 100%;
     z-index: 100;
+    border-radius: 8px;
 }
     .viewport a span em {
         display: block;
