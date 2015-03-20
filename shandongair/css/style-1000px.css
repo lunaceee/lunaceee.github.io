@@ -1,8 +1,4 @@
-/*
-	ZeroFour by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 /*********************************************************************************/
 /* Basic                                                                         */
@@ -54,7 +50,7 @@
 
 	.wrapper
 	{
-		padding: 4.5em 0 4.5em 0;
+		padding: 4.5em 0 3.2em 0;
 	}
 
 /*********************************************************************************/
@@ -87,7 +83,29 @@
 /*********************************************************************************/
 
 
-
 #desktop-gallery{
 	margin-left:-1em;
+}
+
+
+#nav
+	{
+		position: absolute;
+		right: 1em;
+		top: 0;
+		line-height: 5.5em;
+	}
+
+#first-li{
+	display:none;
+}
+
+/* overlay effect */
+.viewport a span {
+	font-size: 2em;
+    padding:80px;
+}
+
+.mobile-table{
+	width:500px;
 }
