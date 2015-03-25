@@ -883,11 +883,11 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #2E3B41;
-	background: #2E3B41 url("images/ui-bg_highlight-soft_25_2E3B41_1x100.png") 50% 50% repeat-x;
+/*	border: 1px solid #2E3B41;
+*/	background: #2E3B41 url("images/ui-bg_highlight-soft_25_2E3B41_1x100.png") 50% 50% repeat-x;
 	font-weight: normal;
-	color: #ffffff;
-}
+/*	color: #ffffff;
+*/}
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,

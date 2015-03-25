@@ -13,7 +13,7 @@
 
 	h2, h3, h4, h5, h6
 	{
-		font-size: 13pt !important;
+		font-size: 14pt !important;
 	}
 
 	h2
@@ -354,7 +354,7 @@
     font-size: 2em;
     font-weight: bold;
     height: 100%;
-    padding:100px 0;
+    padding:120px 0;
     position: absolute;
     text-align: center;
     text-decoration: none;
@@ -363,4 +363,22 @@
     border-radius: 8px;
 }
 
+.appthumb img{
+	margin-left:3.5em;
+	width:80%;
+}
 
+#ipadapp, #iphoneapp{
+	margin-left:3em;
+	margin-right:3em;
+}
+
+
+#onlineclass iframe{
+	width:320px;
+}
+
+#courseintro iframe{
+	width:320px;
+	height:250px;
+}
