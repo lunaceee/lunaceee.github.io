@@ -1,0 +1,163 @@
+$(document).ready(function(){
+    //created show-time carousel
+    $('#show-time-carousel').carousel({
+        full_width: true,
+        time_constant: 500,
+    });
+    //set auto-play for show-time carousel
+    // setInterval(function(){
+    //     $('#show-time-carousel').carousel('next');
+    // },4000)
+    
+
+    //import home page location carousel
+    $('#coming-soon-carousel').carousel({
+        dist: 0,
+        padding: 50,
+    });
+
+
+    //location carousel
+    $('#location-carousel').carousel({
+        dist: 0,
+        padding: 100,
+    });
+
+    //import parallax
+    $('.parallax').parallax();
+
+// scroll magic init controller
+var controller = new ScrollMagic.Controller();
+
+var initialScene = new ScrollMagic.Scene({
+    offset: 1,
+})
+.on("leave", function () {
+    $("#preloader-day").css("background-image","url(/css/images/day-theatre.svg)");
+    $(".loading-bg").css("background-color","#ebe2d0");
+    $("nav ul a").css("color","#635045");
+
+})
+.addTo(controller);
+
+//sceneLoading preloading theatre image
+var sceneLoading = new ScrollMagic.Scene({
+  offset:2,
+  duration: "100%"
+})
+.on("enter", function () {
+		// trigger animation by changing inline style.
+		//preloaderDay.style.backgroundImage = "/css/images/preloader-night.svg";
+	$("#preloader-day").css("background-image","url(/css/images/night-theatre.svg)");
+    $(".loading-bg").css({"background-color":"#535352","transition":"all 2s ease-in-out"});
+    $("nav ul a").css("color","#EDD5B1");
+
+})
+.on()
+// .on("leave",function(){
+//     $("#preloader-day").css("background-image","url(/css/images/day-theatre.svg)");
+//     $(".loading-bg").css("background-color","#ebe2d0");
+
+// })
+.setPin("#sceneLoading",{pushFollowers:true})
+.addIndicators({name: "sceneLoading"}) 
+.addTo(controller);
+
+
+//sceneHomenav navbar
+var sceneHomenav = new ScrollMagic.Scene({
+
+    triggerElement: "#sceneHomenav",
+    loglevel: 3,
+    // duration: 300,
+    triggerHook: 0,
+})
+.on("enter",function(){
+    $("#home-navcolor").css("background-color","rgba(0, 0, 0, 0.2)")
+})
+.on("leave",function(){
+    $("#home-navcolor").css("background-color","none")
+    // $("nav ul a").css("color","#A8763E")
+})
+.setPin("#sceneHomenav",{pushFollowers: false})
+.addIndicators({name: "sceneHomenav"}) 
+.addTo(controller);
+
+//sceneShowtime, now playing
+var sceneShowtime = new ScrollMagic.Scene({
+    triggerElement:"#sceneShowtime",
+    triggerHook: 0,
+    duration: "100%"
+    
+})
+.on("enter",function(){
+    $("#home-navcolor").css({"background-color":"rgba(33, 33, 33, 0.2)","transition":"all 1s ease-in-out"})
+    $("#home-navcolor ul a").css("color","rgba(33, 33, 33, 1)")
+    $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})
+})
+.setPin("#sceneShowtime",{pushFollowers: true})
+.addIndicators({name: "sceneShowtime"}) 
+.addTo(controller);
+
+
+// sceneComingsoon, coming soon
+var sceneComingsoon = new ScrollMagic.Scene({
+    triggerElement:"#sceneComingsoon",
+    triggerHook: 0,
+    duration:"100%"
+
+})
+.on("enter",function(){
+    $("#sceneComingsoon").css("transition","all 1s east-in-out")
+    $("body").css({"background-color":"#FF9800","transition":"all 1s ease-in-out"})
+// .on("leave",function(){
+//     $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})
+//     }
+})
+
+.setPin("#sceneComingsoon",{pushFollowers: true})
+.addTo(controller);
+
+//sceneEvents, landmark exclusives
+var sceneComingsoon = new ScrollMagic.Scene({
+    triggerElement:"#sceneEvents",
+    triggerHook: 0,
+    duration:"100%"
+
+})
+.on("enter",function(){
+    $("#sceneEvents").css("transition","all 1s east-in-out")
+    $("body").css({"background-color":"#ffa726","transition":"all 1s ease-in-out"})
+})
+
+
+.setPin("#sceneEvents",{pushFollowers: true})
+.addTo(controller);
+
+//sceneLocation, Our locations
+var sceneComingsoon = new ScrollMagic.Scene({
+    triggerElement:"#sceneLocations",
+    triggerHook: 0,
+    duration:"100%"
+
+})
+.on("enter",function(){
+    $("#sceneLocations").css("transition","all 1s east-in-out")
+    $("body").css({"background-color":"#FFFFFF","transition":"all 1s ease-in-out"})
+
+})
+
+
+.setPin("#sceneLocations",{pushFollowers: true})
+.addTo(controller);
+
+
+
+
+
+  });//scroll magic closing tag
+
+
+
+  
+

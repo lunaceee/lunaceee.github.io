@@ -1,0 +1,113 @@
+body {
+  font-family: "Poiret One", cursive;
+}
+
+#preloader-day {
+  background-image: url("/css/images/day-theatre.svg");
+  background-repeat: no-repeat;
+  transition: background-image 1s;
+  background-position: center;
+  height: 70vh;
+}
+
+.loading-bg {
+  background-color: #ebe2d0;
+  height: 100vh;
+}
+
+.home-nav {
+  margin-top: 2em;
+  z-index: 20;
+  width: 100%;
+  text-align: center;
+  box-shadow: none;
+}
+
+nav ul a {
+  color: #A8763E;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+#home-navcolor {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+h2 {
+  font-family: "Poiret One", cursive;
+}
+
+.subtitle-margin {
+  padding-top: 4em;
+}
+
+.show-time {
+  height: 40em !important;
+}
+
+#showtime-1 {
+  background-image: url("images/dr-strange.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#showtime-2 {
+  background-image: url("images/lalaland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.human {
+  width: 40%;
+  height: 40%;
+}
+
+.home-events-grid {
+  margin: 0 10em -30em 10em;
+}
+
+.event-card {
+  z-index: 20;
+  position: relative;
+  bottom: 30em;
+  left: 5em;
+}
+
+span.text-content span {
+  position: relative;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.carousel-overlay {
+  z-index: 50;
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.carousel-overlay:hover {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+}
+
+.enlarge:hover span.text-content span {
+  display: block;
+  transition: .5s ease-in-out;
+}
+
+#coming-soon-carousel {
+  height: 350px;
+}
+
+.enlarge {
+  width: 300px !important;
+}
+
+/*# sourceMappingURL=main.css.map */
