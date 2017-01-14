@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Landmark Theatre Redesign</title>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Poiret+One" rel="stylesheet">
+
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Import Normalize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+  <!-- Import materialize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Import main.css -->
+  <link rel="stylesheet" href="css/main.css">
+
+    
+  <!-- Import Jquery -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Import materialize.js -->    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <!-- Import scrollermagic -->
+    <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
+    <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
+  <!-- Import main.js -->    
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+<!-- loading page,first scene -->
+<section class="row loading-bg" id="sceneLoading">
+    <div class="l1">
+      <div class="row"></div>
+      <div id="preloader-day" class=""></div>
+    </div>
+
+<!-- navbar -->
+
+    <section id="sceneHomenav" class="home-nav">
+      <div class="row">
+      <div class="col m12 l12">
+        <nav id="home-navcolor">
+          <div >
+             <ul class="nav-mobile hide-on-med-and-down">
+              <a href="#">Now Playing</a>
+              <a>|</a>
+              <a href="#">Coming Soon</a>
+              <a>|</a>
+              <a href="#">Landmark Exclusive</a>
+              <a>|</a>
+              <a href="#">Our Locations</a>
+              <a>|</a>
+              <a href="#">Our Theatres</a>
+              <a>|</a>
+              <a href="#">Contact Us</a>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </div>  
+    </section>
+</section>
+
+<!-- scene show time -->
+<section id="sceneShowtime">
+    <div class="row subtitle-margin">
+      <div class="col s12 m12 l12 center">
+        <h2>Now Playing</h2>
+      </div>
+    </div>
+
+    <!-- show time carousel -->
+    <div class="row">
+    <div class="col s12 m12 l12">
+      <div id="show-time-carousel" class="carousel carousel-slider show-time center" data-indicators="true">
+        <div class="carousel-fixed-item center">
+<!--           <a class="btn leftwaves-effect white grey-text darken-text-2">button</a>
+ -->        </div>
+        <div class="carousel-item white-text" id="showtime-1" href="#one!">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+          <a class="btn left leftwaves-effect deep-purple lighten-4 white-text darken-text-2">My Button</a>
+        </div>
+        <div class="carousel-item amber white-text" id="showtime-2" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <h2>Fourth Panel</h2>
+          <p class="white-text">This is your fourth panel</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- scene couch -->
+   <!--  <div class="row" >
+            <div class="col s3 m3 l3"></div>
+            <div class="col s12 m12 l6">
+              <img src="css/images/couch.svg">
+            </div>
+            <div class="col s3 m3 l3"></div>
+    </div> -->
+
+</section>
+
+
+<!-- coming soon -->
+<section id="sceneComingsoon">
+    <div class="row subtitle-margin">
+      <div class="col s12 m12 l12 center">
+        <h2>Coming Soon</h2>
+      </div>
+    </div>
+
+    <!-- coming soon carousel -->
+    <div class="row">
+      <div id="coming-soon-carousel" class="carousel">
+        <a class="carousel-item" href="#one!">
+          <img src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="#two!">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="#three!">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="#four!">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="#five!">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="https://www.sandiego.org/">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="https://www.sandiego.org/">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="https://www.sandiego.org/">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+        <a class="carousel-item" href="https://www.sandiego.org/">
+          <img class="" src="http://placehold.it/230x350">
+        </a>
+      </div> 
+    </div>
+
+    <!-- animation human -->
+    <div class="row human">
+      <div class="col s4 m4 l4">
+        <img src="css/images/human.svg"/>
+      </div>
+    </div>
+
+</section>
+
+<!-- landmark Exclusives -->
+<section id="sceneEvents">
+    <div class="row subtitle-margin">
+      <div class="col s12 m12 l12 center">
+        <h2>Landmark Exclusives</h2>
+      </div>
+    </div>
+    <div class="row home-events">
+    <!-- special event description -->
+    
+      <!-- right grid -->
+      <div class="col s12 m12 l12">
+        <img src="css/images/moonrise-kingdom.svg" />
+      </div>
+
+      <!-- left grid -->
+      <div class="col s12 m6 l4 home-events-grid">
+          <div class="card cyan teal lighten-2 z-depth-4 event-card">
+            <div class="card-content white-text">
+              <span class="card-title">Wes Anderson Movie Series</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn" href="#">More</a>
+              <!-- <a href="#">This is a link</a> -->
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Locations -->
+<section id="sceneLocations">
+  <div class="row subtitle-margin">
+    <div class="col s12 m12 l12 center">
+      <h2>Our Locations</h2>
+    </div>
+  </div>
+  <div class="row">
+      <div id="location-carousel" class="carousel">
+        <a class="carousel-item enlarge" href="#one!">
+          <img class="carousel-overlay" src="css/images/sf.jpg">
+          <span class="text-content">
+            <span>San Francisco</span>
+          </span>
+        </a>
+        <a class="carousel-item enlarge" href="#two!">
+          <img class="carousel-overlay" src="css/images/la.jpg">
+          <span class="text-content">
+            <span>Los Angeles</span>
+          </span>
+        </a>
+        <a class="carousel-item enlarge" href="#three!">
+          <img class="carousel-overlay" src="css/images/austin.jpg">
+          <span class="text-content">
+            <span>Austin</span>
+          </span>
+        </a>
+        <a class="carousel-item enlarge" href="#four!">
+          <img class="carousel-overlay" src="css/images/nyc.jpg">
+          <span class="text-content">
+            <span>New York City</span>
+          </span>
+        </a>
+        <a class="carousel-item enlarge" href="#five!">
+          <img class="carousel-overlay" src="css/images/boston.jpg">
+          <span class="text-content">
+            <span>Boston</span>
+          </span>
+        </a>
+        <a class="carousel-item enlarge" href="https://www.sandiego.org/">
+          <img class="carousel-overlay" src="css/images/sd.jpg">
+          <span class="text-content">
+            <span>San Diego</span>
+          </span>
+        </a>
+      </div> 
+  </div>
+</section>
+
+
+<!-- Our theatres -->
+<section id="sceneTheatres">
+  <div class="row subtitle-margin">
+    <div class="col s12 m12 l12 center">
+      <h2>Our Theatres</h2>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section id="sceneContactus">
+  <div class="row subtitle-margin">
+    <div class="col s12 m12 l12 center">
+      <h2>Contact Us</h2>
+    </div>
+  </div>
+</section>
+</body>
+
+<!-- footer -->
+ <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+            
+</html>
