@@ -24,7 +24,8 @@ body {
 }
 
 nav ul a {
-  color: #A8763E;
+  color: #795548;
+  font-weight: bold;
   letter-spacing: 2px;
   display: inline-block;
 }
@@ -43,17 +44,30 @@ h2 {
 }
 
 .show-time {
-  height: 40em !important;
+  height: 100vh !important;
+  width: 100wh !important;
 }
 
 #showtime-1 {
-  background-image: url("images/dr-strange.jpg");
+  background-image: url("images/lalaland-02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #showtime-2 {
-  background-image: url("images/lalaland.jpg");
+  background-image: url("images/rogue-one.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#showtime-3 {
+  background-image: url("images/kubo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#showtime-4 {
+  background-image: url("images/dr-strange.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,17 +77,34 @@ h2 {
   height: 40%;
 }
 
-.home-events-grid {
-  margin: 0 10em -30em 10em;
+#awning {
+  height: 30px;
 }
 
-.event-card {
-  z-index: 20;
-  position: relative;
-  bottom: 30em;
-  left: 5em;
+#awning-2 {
+  height: 0;
+  border-top: 20px solid #ef6c00;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  margin-top: -1.4em;
+  margin-bottom: -10em;
 }
 
+/* steps causes the animation to chunk into 12 equal pieces */
+/*
+.tuna {
+  animation: walk-cycle 1.5s steps(12) 3;
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  margin-bottom:-7em;
+}
+*/
+/* @keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } 
+}*/
+/* Must be full height of sprite or skipping will happen.*/
 span.text-content span {
   position: relative;
   font-size: 2em;
@@ -84,30 +115,10 @@ span.text-content span {
   display: block;
 }
 
-.carousel-overlay {
-  z-index: 50;
-  -webkit-filter: grayscale(0) blur(0);
-  filter: grayscale(0) blur(0);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.carousel-overlay:hover {
-  -webkit-filter: grayscale(100%) blur(3px);
-  filter: grayscale(100%) blur(3px);
-}
-
-.enlarge:hover span.text-content span {
-  display: block;
-  transition: .5s ease-in-out;
-}
-
-#coming-soon-carousel {
-  height: 350px;
-}
-
-.enlarge {
-  width: 300px !important;
+div.carousel-description {
+  position: relative;
+  margin-top: 30em;
+  margin-left: 20em;
 }
 
 /*# sourceMappingURL=main.css.map */

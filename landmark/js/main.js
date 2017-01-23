@@ -2,7 +2,6 @@ $(document).ready(function(){
     //created show-time carousel
     $('#show-time-carousel').carousel({
         full_width: true,
-        time_constant: 500,
     });
     //set auto-play for show-time carousel
     // setInterval(function(){
@@ -13,7 +12,7 @@ $(document).ready(function(){
     //import home page location carousel
     $('#coming-soon-carousel').carousel({
         dist: 0,
-        padding: 50,
+        padding: 80,
     });
 
 
@@ -33,9 +32,9 @@ var initialScene = new ScrollMagic.Scene({
     offset: 1,
 })
 .on("leave", function () {
-    $("#preloader-day").css("background-image","url(css/images/day-theatre.svg)");
+    $("#preloader-day").css("background-image","url(../css/images/day-theatre.svg)");
     $(".loading-bg").css("background-color","#ebe2d0");
-    $("nav ul a").css("color","#635045");
+    $("nav ul a").css("color","#795548");
 
 })
 .addTo(controller);
@@ -48,9 +47,9 @@ var sceneLoading = new ScrollMagic.Scene({
 .on("enter", function () {
 		// trigger animation by changing inline style.
 		//preloaderDay.style.backgroundImage = "/css/images/preloader-night.svg";
-	$("#preloader-day").css("background-image","url(css/images/night-theatre.svg)");
+	$("#preloader-day").css("background-image","url(../css/images/night-theatre.svg)");
     $(".loading-bg").css({"background-color":"#535352","transition":"all 2s ease-in-out"});
-    $("nav ul a").css("color","#EDD5B1");
+    $("nav ul a").css("color","#BDBDBD");
 
 })
 .on()
@@ -92,8 +91,7 @@ var sceneShowtime = new ScrollMagic.Scene({
 })
 .on("enter",function(){
     $("#home-navcolor").css({"background-color":"rgba(33, 33, 33, 0.2)","transition":"all 1s ease-in-out"})
-    $("#home-navcolor ul a").css("color","rgba(33, 33, 33, 1)")
-    $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})
+    $("#home-navcolor ul a").css("color","#FFFFFF")
 })
 .setPin("#sceneShowtime",{pushFollowers: true})
 .addIndicators({name: "sceneShowtime"}) 
@@ -109,17 +107,20 @@ var sceneComingsoon = new ScrollMagic.Scene({
 })
 .on("enter",function(){
     $("#sceneComingsoon").css("transition","all 1s east-in-out")
-    $("body").css({"background-color":"#FF9800","transition":"all 1s ease-in-out"})
-// .on("leave",function(){
-//     $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})
-//     }
+    $(".poster-effect").css({"border":"10px solid #FFC107","transition":"all 1s ease-in-out"})
+    $("body").css({"background-image":"white","transition":"all 1s ease-in-out"})
+
+.on("leave",function(){
+    $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})
+    })
 })
 
 .setPin("#sceneComingsoon",{pushFollowers: true})
 .addTo(controller);
 
+
 //sceneEvents, landmark exclusives
-var sceneComingsoon = new ScrollMagic.Scene({
+var sceneEvents = new ScrollMagic.Scene({
     triggerElement:"#sceneEvents",
     triggerHook: 0,
     duration:"100%"
@@ -127,7 +128,7 @@ var sceneComingsoon = new ScrollMagic.Scene({
 })
 .on("enter",function(){
     $("#sceneEvents").css("transition","all 1s east-in-out")
-    $("body").css({"background-color":"#ffa726","transition":"all 1s ease-in-out"})
+    $("body").css({"background-image":"#FF5252","transition":"all 1s ease-in-out"})
 })
 
 
@@ -135,7 +136,7 @@ var sceneComingsoon = new ScrollMagic.Scene({
 .addTo(controller);
 
 //sceneLocation, Our locations
-var sceneComingsoon = new ScrollMagic.Scene({
+var sceneLocation = new ScrollMagic.Scene({
     triggerElement:"#sceneLocations",
     triggerHook: 0,
     duration:"100%"
@@ -143,7 +144,7 @@ var sceneComingsoon = new ScrollMagic.Scene({
 })
 .on("enter",function(){
     $("#sceneLocations").css("transition","all 1s east-in-out")
-    $("body").css({"background-color":"#FFFFFF","transition":"all 1s ease-in-out"})
+    $("body").css({"background-color":"white","transition":"all 1s ease-in-out"})
 
 })
 
