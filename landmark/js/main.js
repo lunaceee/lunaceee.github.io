@@ -12,7 +12,7 @@ $(document).ready(function(){
     //import home page location carousel
     $('#coming-soon-carousel').carousel({
         dist: 0,
-        padding: 80,
+        padding: 20,
     });
 
 
@@ -52,7 +52,7 @@ var sceneLoading = new ScrollMagic.Scene({
     $("nav ul a").css("color","#BDBDBD");
 
 })
-.on()
+
 // .on("leave",function(){
 //     $("#preloader-day").css("background-image","url(/css/images/day-theatre.svg)");
 //     $(".loading-bg").css("background-color","#ebe2d0");
@@ -105,17 +105,26 @@ var sceneComingsoon = new ScrollMagic.Scene({
     duration:"100%"
 
 })
+
 .on("enter",function(){
-    $("#sceneComingsoon").css("transition","all 1s east-in-out")
     $(".poster-effect").css({"border":"10px solid #FFC107","transition":"all 1s ease-in-out"})
-    $("body").css({"background-image":"white","transition":"all 1s ease-in-out"})
+    $("#awning").css({"height":"30px","transition":"all 1s ease-in-out"})
+    $("#awning-2").css({"border-top":"20px solid #ef6c00","transition":"all 1s ease-in-out"})
+    $("#awning-2").css({"border-left":"50px solid transparent","transition":"all 1s ease-in-out"})
+    $("#awning-2").css({"border-right":"50px solid transparent","transition":"all 1s ease-in-out"})})
 
 .on("leave",function(){
-    $("body").css({"background-color":"#FFECB3","transition":"all 1s ease-in-out"})
-    })
+    $(".poster-effect").css({"border":"0px solid","transition":"all 1s ease-in-out"})
+    $("#awning").css({"height":"0px !important","transition":"all 1s ease-in-out"})
+    $("#awning-2").css({"border-top":"0px solid !important","transition":"all 1s ease-in-out"})
+    $("#awning-2").css({"border-left":"0px solid !important","transition":"all 1s ease-in-out"})
+    $("#awning-2").css({"border-right":"0px solid !important","transition":"all 1s ease-in-out"})
+
+
 })
 
 .setPin("#sceneComingsoon",{pushFollowers: true})
+.addIndicators({name: "sceneComingsoon"}) 
 .addTo(controller);
 
 

@@ -3,7 +3,7 @@ body {
 }
 
 #preloader-day {
-  background-image: url("/css/images/day-theatre.svg");
+  background-image: url("css/images/day-theatre.svg");
   background-repeat: no-repeat;
   transition: background-image 1s;
   background-position: center;
@@ -77,17 +77,29 @@ h2 {
   height: 40%;
 }
 
+#awnings {
+  margin-top: 5em;
+}
+
 #awning {
-  height: 30px;
+  height: 0px;
 }
 
 #awning-2 {
-  height: 0;
-  border-top: 20px solid #ef6c00;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-top: 0px solid #ef6c00;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
   margin-top: -1.4em;
   margin-bottom: -10em;
+}
+
+#coming-soon-carousel {
+  height: 300px;
+}
+
+.poster-effect {
+  height: 250px !important;
+  width: 175px !important;
 }
 
 /* steps causes the animation to chunk into 12 equal pieces */
