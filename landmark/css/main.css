@@ -3,7 +3,7 @@ body {
 }
 
 #preloader-day {
-  background-image: url("css/images/day-theatre.svg");
+  background-image: url("images/day-theatre.svg");
   background-repeat: no-repeat;
   transition: background-image 1s;
   background-position: center;
