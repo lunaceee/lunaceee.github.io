@@ -47,7 +47,7 @@ var sceneLoading = new ScrollMagic.Scene({
 .on("enter", function () {
 		// trigger animation by changing inline style.
 		//preloaderDay.style.backgroundImage = "/css/images/preloader-night.svg";
-	$("#preloader-day").css("background-image","url(css/images/night-theatre.svg)");
+	$("#preloader-day").css({"background-image":"url(css/images/night-theatre.svg)","transition":"all 2s ease-in-out"});
     $(".loading-bg").css({"background-color":"#535352","transition":"all 2s ease-in-out"});
     $("nav ul a").css("color","#BDBDBD");
 
