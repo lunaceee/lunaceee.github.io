@@ -76,10 +76,6 @@ h2 {
   height: 40%;
 }
 
-#awnings {
-  margin-top: 5em;
-}
-
 #awning {
   height: 0px;
 }
@@ -102,20 +98,29 @@ h2 {
 }
 
 /* steps causes the animation to chunk into 12 equal pieces */
-/*
 .tuna {
-  animation: walk-cycle 1.5s steps(12) 3;
-  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
-  height: 200px;
-  width: 400px;
-  margin-bottom:-7em;
+  animation: walk-cycle 2s steps(12) infinite;
+  background: url("images/tuna_sprite.png") 0 0 no-repeat;
+  height: 48px;
+  width: 90px;
+  margin-bottom: -0.9em;
 }
-*/
-/* @keyframes walk-cycle {  
-  0% {background-position: 0 0; } 
-  100% {background-position: 0 -2391px; } 
-}*/
+
+@keyframes walk-cycle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -550px;
+  }
+}
 /* Must be full height of sprite or skipping will happen.*/
+div.carousel-description {
+  position: relative;
+  margin-top: 30em;
+  margin-left: 20em;
+}
+
 span.text-content span {
   position: relative;
   font-size: 2em;
@@ -124,12 +129,6 @@ span.text-content span {
   text-align: center;
   width: 100%;
   display: block;
-}
-
-div.carousel-description {
-  position: relative;
-  margin-top: 30em;
-  margin-left: 20em;
 }
 
 /*# sourceMappingURL=main.css.map */

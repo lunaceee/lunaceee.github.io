@@ -25,6 +25,9 @@ $(document).ready(function(){
     //import parallax
     $('.parallax').parallax();
 
+    //import materialize forms
+    $('select').material_select();
+
 // scroll magic init controller
 var controller = new ScrollMagic.Controller();
 
