@@ -1,0 +1,180 @@
+@import "sass/partials/variables";
+@import "sass/partials/mixins";
+
+//variables
+//color
+$nav-color: #FFD8B0;
+
+//font
+$main:'Poiret One', cursive;
+
+//
+//
+//
+
+//homepage body
+body {
+	font-family:$main;
+}
+
+//preloading-page
+
+#preloader-day {
+	background-image: url('images/day-theatre.svg');
+	background-repeat: no-repeat;
+	//transition: background-image 1s;
+	background-position: center;
+	height: 70vh;
+}
+
+
+.loading-bg {
+	background-color:#ebe2d0;
+	height:100vh;
+}
+
+
+//homepage navbar
+.home-nav {
+	margin-top:2em;
+	z-index: 20;
+	width:100%;
+	text-align:center;
+	box-shadow:none;
+}
+
+nav ul a {
+	color: #795548;
+	font-weight: bold;
+	letter-spacing: 2px;
+	display:inline-block;
+}
+
+#home-navcolor {
+	box-shadow:none;
+	background-color:transparent;
+
+}
+
+h2 {
+	font-family: $main;
+}
+
+
+.subtitle-margin {
+	padding-top:4em;
+}
+
+//show time
+
+
+.show-time {
+	height: 100vh !important;
+	width: 100wh !important;
+}
+
+#showtime-1 {
+	background-image:url('images/lalaland-02.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+#showtime-2 {
+	background-image:url('images/rogue-one.svg');
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+#showtime-3 {
+	background-image:url('images/kubo.svg');
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+#showtime-4 {
+	background-image:url('images/dr-strange.svg');
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+
+.human {
+	width:40%;
+	height:40%;
+}
+
+//coming soon
+
+#awnings {
+}
+
+#awning {
+	height: 0px;
+}
+
+#awning-2 {
+	border-top: 0px solid #ef6c00; 
+	border-left: 0px solid transparent; 
+	border-right: 0px solid transparent;
+	margin-top: -1.4em; 
+	margin-bottom:-10em;
+}
+
+#coming-soon-carousel {
+	height:300px;
+}
+
+.poster-effect {
+	height: 250px !important;
+	width: 175px !important;
+}
+
+//cat
+
+  /* steps causes the animation to chunk into 12 equal pieces */
+
+.tuna {
+  animation: walk-cycle 2s steps(12) infinite;
+  background: url("images/tuna_sprite.png") 0 0 no-repeat;
+  height: 48px;
+  width: 90px;
+  margin-bottom: -0.9em;
+}
+
+
+ @keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -550px; } 
+}
+/* Must be full height of sprite or skipping will happen.*/
+
+
+
+
+//landmark exclusive
+div.carousel-description {
+	position: relative;
+	margin-top: 30em;
+	margin-left: 20em;
+}
+
+			
+
+//location
+
+span.text-content span {
+   position: relative; 
+   font-size:2em;
+   font-weight:bold;
+   color: black;
+   text-align:center; 
+   width: 100%; 
+   display:block;
+}
+
+//gift card
+
+
+
+
+

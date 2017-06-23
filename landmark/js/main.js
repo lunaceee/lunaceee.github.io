@@ -62,7 +62,7 @@ var sceneLoading = new ScrollMagic.Scene({
 
 // })
 .setPin("#sceneLoading",{pushFollowers:true})
-.addIndicators({name: "sceneLoading"}) 
+// .addIndicators({name: "sceneLoading"}) 
 .addTo(controller);
 
 
@@ -82,7 +82,7 @@ var sceneHomenav = new ScrollMagic.Scene({
     // $("nav ul a").css("color","#A8763E")
 })
 .setPin("#sceneHomenav",{pushFollowers: false})
-.addIndicators({name: "sceneHomenav"}) 
+// .addIndicators({name: "sceneHomenav"}) 
 .addTo(controller);
 
 //sceneShowtime, now playing
@@ -97,7 +97,7 @@ var sceneShowtime = new ScrollMagic.Scene({
     $("#home-navcolor ul a").css("color","#FFFFFF")
 })
 .setPin("#sceneShowtime",{pushFollowers: true})
-.addIndicators({name: "sceneShowtime"}) 
+// .addIndicators({name: "sceneShowtime"}) 
 .addTo(controller);
 
 
@@ -127,7 +127,7 @@ var sceneComingsoon = new ScrollMagic.Scene({
 })
 
 .setPin("#sceneComingsoon",{pushFollowers: true})
-.addIndicators({name: "sceneComingsoon"}) 
+// .addIndicators({name: "sceneComingsoon"}) 
 .addTo(controller);
 
 
@@ -164,7 +164,27 @@ var sceneLocation = new ScrollMagic.Scene({
 .setPin("#sceneLocations",{pushFollowers: true})
 .addTo(controller);
 
+//sceneGiftcard, Gift Card
+var sceneGiftcard = new ScrollMagic.Scene({
+    triggerElement:"#sceneGiftcard",
+    triggerHook: 0,
+    duration:"100%"
 
+})
+
+.setPin("#sceneGiftcard",{pushFollowers: true})
+.addTo(controller);
+
+//sceneContactus, Contact Us
+var sceneContactus = new ScrollMagic.Scene({
+    triggerElement:"#sceneContactus",
+    triggerHook: 0,
+    duration:"100%"
+
+})
+
+.setPin("#sceneContactus",{pushFollowers: true})
+.addTo(controller);
 
 
 
